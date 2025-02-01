@@ -25,8 +25,8 @@ function showInitialUI(player) {
     const initialUI = new ActionFormData()
         .title("§l§2Main Menu")
         .body("Choose an option:")
-        .button("Canned Messages", "textures/ui/feedback")  // Placeholder texture for canned messages
-        .button("Locations", "textures/ui/map");
+        .button("Canned Messages", "textures/ui/newOffersIcon")  // Placeholder texture for canned messages
+        .button("Locations", "textures/ui/storageIconColor");
 
     initialUI.show(player).then((response) => {
         if (!response.canceled) {
@@ -44,7 +44,7 @@ function showCombinedUI(player, locations) {
     const combinedUI = new ActionFormData()
         .title("§l§2Manage Locations")
         .body("Submit A New Location:")
-        .button("Submit a New Location", "textures/ui/editIcon")
+        .button("Submit a New Location", "textures/ui/subscription_glyph_color")
         .button("Delete Marked Place", "textures/ui/trash")
         .button("Search Location", "textures/ui/magnifyingGlass")
         .button("Clear Coordinates Message", "textures/ui/trash");

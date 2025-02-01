@@ -5,12 +5,12 @@ export function showCannedMessagesUI(player, showInitialUI) {
     const cannedMessagesUI = new ActionFormData()
         .title("§l§2Canned Messages")
         .body("Choose a message to send:")
-        .button("Help!", "textures/ui/feedback")
-        .button("Follow Me", "textures/ui/direction")
-        .button("Need Backup", "textures/ui/strength")
+        .button("Help!", "textures/ui/multiplayer_glyph_color")
+        .button("Follow Me", "textures/ui/icon_preview")
+        .button("Need Backup", "textures/ui/icon_recipe_equipment")
         .button("Look Here", "textures/ui/eye")
-        .button("All Clear", "textures/ui/check")
-        .button("Food", "textures/ui/food") // Adjust the texture if necessary
+        .button("All Clear", "textures/ui/realms_green_check")
+        .button("Food", "textures/ui/hunger_effect") // Adjust the texture if necessary
         .button("Back", "textures/ui/back");
 
     cannedMessagesUI.show(player).then((response) => {

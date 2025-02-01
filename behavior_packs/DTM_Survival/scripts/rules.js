@@ -3,7 +3,8 @@ import { world } from '@minecraft/server';
 
 function showRulesForm(player) {
     const rules = [
-        "To remove this nag screen everytime you spawn you must accept the following rules:",
+        "Please read and accept the rules",
+        " ",
         "1. No griefing.",
         "2. No spamming.",
         "3. Be respectful to other players.",
@@ -12,7 +13,7 @@ function showRulesForm(player) {
 
     const rulesForm = new ModalFormData()
         .title("§l§2Server Rules")
-        .textField(rules, "Please read and accept the rules")
+        .textField(rules, "Accept the rules to continue:")
         .toggle("Accept the rules", false);
 
     rulesForm.show(player).then((response) => {
