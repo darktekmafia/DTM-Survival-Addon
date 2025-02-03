@@ -25,8 +25,8 @@ function showInitialUI(player) {
     const initialUI = new ActionFormData()
         .title("§l§2Main Menu")
         .body("Choose an option:")
-        .button("Canned Messages", "textures/ui/newOffersIcon")  // Placeholder texture for canned messages
-        .button("Locations", "textures/ui/storageIconColor");
+        .button("Canned Messages", "textures/ui/canned")  // Placeholder texture for canned messages
+        .button("Locations", "textures/ui/locations");
 
     initialUI.show(player).then((response) => {
         if (!response.canceled) {
@@ -44,13 +44,13 @@ function showCombinedUI(player, locations) {
     const combinedUI = new ActionFormData()
         .title("§l§2Manage Locations")
         .body("Submit A New Location:")
-        .button("Submit a New Location", "textures/ui/subscription_glyph_color")
-        .button("Delete Marked Place", "textures/ui/trash")
-        .button("Search Location", "textures/ui/magnifyingGlass")
-        .button("Clear Coordinates Message", "textures/ui/trash");
+        .button("Submit a New Location", "textures/ui/add_location")
+        .button("Delete Marked Place", "textures/ui/del_location")
+        .button("Search Location", "textures/ui/search_loc")
+        .button("Clear Coordinates Message", "textures/ui/clear_coord");
 
     locations.forEach(location => {
-        combinedUI.button(`§l§5${location.name}`, "textures/ui/mashup_world");
+        combinedUI.button(`§l§5${location.name}`, "textures/ui/saved_loc");
     });
 
     combinedUI.show(player).then((response) => {
@@ -97,7 +97,7 @@ function showFilteredLocationsUI(player, filteredLocations) {
     const filteredUI = new ActionFormData()
         .title("§l§2Search Results");
     filteredLocations.forEach(location => {
-        filteredUI.button(`§l§5${location.name}`, "textures/ui/mashup_world");
+        filteredUI.button(`§l§5${location.name}`, "textures/ui/saved_loc");
     });
 
     filteredUI.show(player).then((response) => {
@@ -224,7 +224,7 @@ function showDeleteLocationForm(player, locations) {
 
 world.afterEvents.itemUse.subscribe((event) => {
     const { source, itemStack } = event;
-    if (itemStack.typeId === "dtm:survival") {
+    if (itemStack.typeId === "dtm:survival_tool") {
         showInitialUI(source);
     }
 });

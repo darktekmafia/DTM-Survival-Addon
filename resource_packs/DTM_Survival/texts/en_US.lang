@@ -1,2 +1,2 @@
-item.dtm:admin_tool=Admin Tool
-item.dtm:survival=Survival Tool
+item.dtm:admin_tool.name=Admin Tool
+item.dtm:survival_tool.name=Survival Tool
