@@ -8,10 +8,10 @@ function showAdminMenu(player) {
     const adminMenu = new ActionFormData()
         .title("§l§2Admin Menu")
         .body("Select an admin function:")
-        .button("Warn Player", "textures/ui/Feedback")
-        .button("Kick Player", "textures/ui/bang_icon")
-        .button("Freeze/Unfreeze Player", "textures/ui/icon_winter")
-        .button("Ban/Unban Player", "textures/ui/InvalidWorldDemoScreen");
+        .button("Warn Player", "textures/ui/admin_warn")
+        .button("Kick Player", "textures/ui/admin_kick")
+        .button("Freeze/Unfreeze Player", "textures/ui/admin_freeze")
+        .button("Ban/Unban Player", "textures/ui/admin_ban");
 
     adminMenu.show(player).then((response) => {
         if (!response.canceled) {

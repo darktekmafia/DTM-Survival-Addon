@@ -1,9 +1,11 @@
 {
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
   "texture_data": {
-    "dtm:survival": {
+    "survival_tool": {
       "textures": "textures/items/survival_tool"
     },
-    "dtm:admin_tool": {
+    "admin_tool": {
       "textures": "textures/items/admin_tool"
     }
   }

@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "dtm:survival"
+      "identifier": "dtm:survival_tool"
     },
     "tags": [
       "crafting_table"
@@ -21,7 +21,7 @@
       }
     },
     "result": {
-      "item": "dtm:survival",
+      "item": "dtm:survival_tool",
       "count": 1
     }
   }
