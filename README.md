@@ -9,8 +9,7 @@ DTM Survival Addon is a Minecraft Bedrock Edition addon that enhances the surviv
 - **Survival Tool**: A versatile tool designed to assist players in survival mode with unique functionalities.
 
 ### Behavior Packs
-- **Custom Mobs**: Introduces new behaviors and abilities to existing mobs, making the game more dynamic.
-- **Player Management**: Scripts for managing player permissions, banning, and unbanning players.
+- **Player Management**: Scripts for managing player permissions [^1] , banning, and unbanning players.
   - **Ban Script**: Permanently ban players from the server with dynamic properties storage for persistence.
   - **Admin Script**: Provides administrative commands and functionalities for server management.
 
@@ -18,7 +17,7 @@ DTM Survival Addon is a Minecraft Bedrock Edition addon that enhances the surviv
 - **Custom Textures**: High-quality textures for new items and tools to enhance the visual experience.
 - **Item Textures**: Custom textures for admin and survival tools, providing a unique look and feel.
 
-### Economy System
+### Economy System [^2]
 - **Dynamic Economy**: Implements an in-game currency system to manage trades and transactions.
 - **Player Balance Tracking**: Uses world dynamic properties to store and retrieve player balances.
 
@@ -38,9 +37,7 @@ DTM Survival Addon is a Minecraft Bedrock Edition addon that enhances the surviv
      ```
 2. **Install the Addon**:
    - Copy the `behavior_packs` and `resource_packs` folders to your Minecraft Bedrock installation directory.
-   - For Windows, this directory is usually located at `C:\Users
-
-\[YourUsername]\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\`.
+   - For Windows, this directory is usually located at `C:\Users\[YourUsername]\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\`.
 
 3. **Activate the Addon**:
    - Launch Minecraft Bedrock Edition.
@@ -53,12 +50,10 @@ DTM Survival Addon is a Minecraft Bedrock Edition addon that enhances the surviv
 - **Survival Tool**: Equip this tool for various survival tasks.
 
 ### Player Management
-- **Ban a Player**:
-- **Unban a Plaer**:
-
-### Economy System
-- **Check Balance**:
-- **Set Balance**:
+- **Warn Player**:
+- **Kick Player**:
+- **Freeze / Unfreeze Player**:
+- **Ban / UnBan Player**:
 
 ### Contributing
 We welcome contributions from the community! If you'd like to contribute to the DTM Survival Addon, please fork the repository and create a pull request with your changes.
@@ -77,4 +72,8 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 For any questions or support, please contact the project maintainer at info@darktekmafia.com .
 
 Happy surviving! 😊
+
+
+[^1]: Player permissions will be added in a later release and do not exist in the addon yet.
+[^2]: The Economy System is not available yet. It will be added in a later release
 
