@@ -5,7 +5,7 @@
     "name": "DTM - Survival",
     "uuid": "6831c155-1703-4df1-b964-3663aceaa7ff",
     "version": [1, 0, 2],
-    "min_engine_version": [1, 21, 0]
+    "min_engine_version": [1, 16, 0]
   },
   "modules": [
     {
