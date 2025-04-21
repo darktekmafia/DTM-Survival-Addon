@@ -33,7 +33,7 @@ DTM Survival Addon is a Minecraft Bedrock Edition addon that enhances the surviv
 1. **Download the Addon**:
    - Clone the repository:
      ```bash
-     git clone https://github.com/yourusername/DTM-Survival-Addon.git
+     git clone https://github.com/darktekmafia/DTM-Survival-Addon.git
      ```
 2. **Install the Addon**:
    - Copy the `behavior_packs` and `resource_packs` folders to your Minecraft Bedrock installation directory.
