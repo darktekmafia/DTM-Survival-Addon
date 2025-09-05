@@ -1,5 +1,5 @@
 {
-  "format_version": "1.12",
+  "format_version": "1.12.0",
   "minecraft:item": {
     "description": {
       "identifier": "dtm:survival_tool",
@@ -9,7 +9,7 @@
     "components": {
       "minecraft:max_stack_size": 1,
       "minecraft:max_damage": 0,
-      "minecraft:creative_catagory": "Items"
+      "minecraft:creative_category": "Items"
     },
     "minecraft:display_name": {
       "value": "Survival Tool"
